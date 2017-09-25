@@ -63,9 +63,9 @@ describe('Test Suite - Stack', () => {
     });
     
     it('should create an instance from given parameters', function(){
-        rechnungStack.$stackOf("Freiwillige Zuwendung", "Spielgruppe");
+        rechnungStack._stackOf("Freiwillige Zuwendung", "Spielgruppe");
         let isEmpty = rechnungStack.isEmpty();
-        let topOfStack = rechnungStack.peek()
+        let topOfStack = rechnungStack.peek();
         let size = rechnungStack.size(); 
 
         isEmpty.should.be.equal(false);

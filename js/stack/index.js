@@ -61,8 +61,9 @@ Array.prototype.$stackOf = function(pArray){
  * Creates a stack from a the given parameters
  */
 Array.prototype._stackOf = function(...items){
+    // this.$stackOf(items); // yukardaki fonksiyonu kullanarak
     for(let value of items){
-        this.add(value);
+        this.push(value);
     }
 };
 
